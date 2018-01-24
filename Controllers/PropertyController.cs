@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+// ReSharper disable Mvc.ControllerNotResolved
 
 namespace BIMToolkitAPIClient.Controllers
 {
@@ -30,6 +31,7 @@ namespace BIMToolkitAPIClient.Controllers
         {
             if (String.IsNullOrWhiteSpace(searchTerm))
             {
+                // ReSharper disable once Mvc.ActionNotResolved
                 return RedirectToAction("Index", "Properties");
             }
 
